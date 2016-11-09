@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок «Формы»: теги и их атрибуты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="formdata.php" method="post" name="form1"></form>
+    
+    <main>
+          <h1>Урок «Формы»: теги и их атрибуты</h1>
+          <h2>Расскажите немного о себе…</h2>
+          <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные</p>
+
+        <fieldset>
+            <legend>Коротко о себе</legend>
+            <p><label>Имя (макс. 10 символов): <input type="text" name="name" maxlength="10" placeholder="Имя"></label></p>
+            <p><label>Фамилия (макс. 20 символов): <input type="text" name="surname" maxlength="20" placeholder="Фамилия"></label></p>
+            <p>Пол:
+            <label><input type="radio" name="gender" value="man" checked> мужской</label>
+            <label><input type="radio" name="gender" value="woman"> женский</label>
+            </p>
+            <p><label>Возраст: <input type="text" name="name" size="3" maxlength="3"></label> лет</p>
+        
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend>Подробнее о себе</legend>
+               <p><label><input type="radio" name="people" value="guy" checked> Молодой человек</label></p>  
+               <p><label><input type="radio" name="people" value="girl"> Девушка</label></p>
+               <p><label><input type="text" name="date_of_birth"> Дата рождения</label></p>
+               <p><label><input type="text" name="family_status"> Семейное положение</label></p>
+               <p><label><input type="text" name="social_status"> Социальный статус</label></p>
+               <p><label><input type="text" name="location"> Местожительство</label></p>
+                
+                <p class="zagolovki">Что вы обычно делаете на выходных:</p>
+                <p><label><input type="checkbox" name="sleep">Сплю</label></p>
+                <p><label><input type="checkbox" name="walking">Гуляю с друзьями</label></p>
+                <p><label><input type="checkbox" name="fishing">Хожу на рыбалку</label></p>
+                <p><label><input type="checkbox" name="Playing">Играю в игры</label></p>
+                
+                <p class="zagolovki"><label for="book">Рассказать о формах в книге, посвященной HTML:</label></p>
+                <p>
+                    <select name="book" id="book">
+                        <option>Значение 1</option>
+                        <option>Значение 2</option>
+                        <option>Значение 3</option>
+                        <option>Значение 100</option>
+                    </select>
+                </p>
+                
+                <p class="zagolovki">Сколько книг вы прочитали за свою жизнь:</p>
+                <p><label><input type="radio" name="val-1">0-10</label></p>
+                <p><label><input type="radio" name="val-1">11-20</label></p>
+                <p><label><input type="radio" name="val-1">21-50</label></p>
+                <p><label><input type="radio" name="val-1">50+</label></p>
+                
+                <p class="zagolovki"><label for="text">Ваши комментарии:</label></p>
+                <textarea name="text" cols="60" rows="6" id="text"></textarea>
+                
+                <p>
+                    <select name="position" size="3">
+                        <option>Первая позиция</option>
+                        <option selected>Вторая позиция</option>
+                        <option>Третья позиция</option>
+                    </select>
+                </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>И в заключении</legend>
+            <input type="text" placeholder="Это поле было введено до вас" size="30">
+                
+            <p><label for="email">E-mail:</label></p>
+            <input type="email" name="email" id="email">
+            
+            <p class="zagolovki">Хотите подписаться на самую модную рассылку спама?</p>
+            <em>Выберите категории</em>
+            <p><label><input type="checkbox" name="equipment">Оборудование</label></p>
+            <p><label><input type="checkbox" name="cook-meals">Как приготовить обеды</label></p>
+            <p><label><input type="checkbox" name="Earn">Заработай миллион за два дня!</label></p>
+            
+            <p class="zagolovki">На сколько сложная задача:</p>
+            <p><label><input type="radio" name="task" value="not" checked>Совсем нет</label></p>
+            <p><label><input type="radio" name="task" value="so-so">Так себе</label></p>
+            <p><label><input type="radio" name="task" value="barely">Еле справился</label></p>
+            
+        </fieldset>
+
+        <p><input type="submit" name="button" value="Отправить"></p>
+        
+    </main>
+    
+</body>
+</html>
